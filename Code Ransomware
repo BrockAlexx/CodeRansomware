@@ -1,0 +1,24 @@
+color 0A
+@echo off 
+title TEXTO
+taskkill /f /im explorer.exe 
+:bucle 
+cls               
+msg * TEXTO
+msg * TEXTO
+msg * TEXTO
+msg * TEXTO
+msg * TEXTO
+msg * TEXTO
+echo =============================================
+echo TEXTO
+echo =============================================
+echo TEXTO
+echo =============================================
+set /p pass=TEXTO: 
+if %pass%==TEXTO (goto passcorrecto) ELSE (goto bucle)
+:passcorrecto
+echo Felicidades!
+start explorer.exe 
+pause
+exit
